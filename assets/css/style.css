@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap');
+
+
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #c88bf3;
+    --white: #fff;
+    --light-purple: #fbf6ffb6;
+    --green: #4fff4b;
+    --padding: 4rem 8rem;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+
+.header {
+    background: var(--purple-bg);
+    height: 80vh;
+    width: 100%;
+    padding: var(--padding);
+    border-bottom: 0.3rem solid var(--green);
+}
+
+
+.menu-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-flex .logo {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.logo span {
+    color: var(--green);
+}
+
+.menu-flex ul {
+    display: flex;
+}
+
+.menu-flex ul li {
+    list-style: none;
+}
+
+.position {
+    text-decoration: none;
+    margin-left: 2rem;
+    color: var(--light-purple);
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.position::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0.1rem;
+    left: -0.6rem;
+    width: 0%;
+    height: 2rem;
+    background: var(--green);
+}
+
+.position:active::after {
+    width: 4%;
+}
+
+.position:active {
+    color: var(--white);
+}
+
+.buscar {
+    border: none;
+    border-radius: 0.2rem;
+    background: var(--dark-bg);
+    height: 3rem;
+    width: 20rem;
+    color: var(--white);
+    padding: 0.9rem;
+}
+
+.buscar::placeholder {
+    color: var(--light-purple);
+}
+
+form {
+    position: relative;
+}
+
+form button {
+    position: absolute;
+    border: none;
+    border-radius: 0rem 0.2rem 0.2rem 0.0rem;
+    height: 3rem;
+    width: 5rem;
+    background:var(--button-bg);
+    cursor: pointer;
+}
+
+button img {
+    height: 2rem;
+    margin-top: 0.4rem;
+}
+
+.header-grid {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.text-grid h2 {
+    font-size: 4rem;
+    color: var(--button-bg);
+}
+
+.text-grid p {
+    display: block;
+    height: 10rem;
+    width: 45rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.text-a {
+    display: flex;
+}
+
+.a-purple {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--button-bg);
+}
+
+.text-a img {
+    margin-left: 0.3rem;
+}
+
+.publicacoes {
+    height: 90vh;
+    max-width: 100%;
+    padding: var(--padding);
+}
+
+.publicacoes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+
+
+.publicacoes-grid .post-one {
+    height: 75vh;
+} 
+
+.img-post-one {
+    height: 50vh;
+}
+
+.font-size-p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.paragraphy {
+    font-size: 1.3rem;
+}
+
+.publicacoes-grid .posts-double {
+    height: 60vh;
+    max-width: 100%;
+    margin-left: 1rem;
+} 
+
+.h3-a a {
+    text-decoration: none;
+    position: relative;
+    color: var(--purple-bg);
+}
+
+
+.h3-a a:hover {
+    border-bottom: 2px solid var(--button-bg);
+}
+
+.posts-h3 {
+    margin: inherit;
+    margin: 1rem 0 0.1rem 0;
+    display: block;
+    height: 15vh;
+    width: 73%;
+}
+
+.posts-p {
+    display: block;
+    height: 14vh;
+    max-width: 70%;
+}
+
+.spacing {
+    max-width: 80%;
+    margin-top: 0.1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.664);
+}
+
+.bigPosts {
+    padding: var(--padding);
+    height: 90vh;
+    max-width: 100%;
+}
+
+.bigPosts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.bigPosts-grid article {
+    height: 70vh;
+    width: 100%;
+}
+
+.big-posts-h3 {
+    display: block;
+    height: 10vh;
+    width: 80%;
+}
